@@ -39,6 +39,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Figma(https://www.figma.com/file/u1DCoc4q503wv7SeCgAe6a/cart-page?node-id=0%3A1&t=fg4bId7fFE2STPQ8-0) built by Myself
 
 ### What I learned
 
