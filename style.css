@@ -1,185 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap");
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    background-color:  hsl(30, 38%, 92%);
+body {
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.product{
-    display: flex;
-    flex-direction: row;
-    width:700px;
-    height: 500px;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 15px;
-    margin: 40px auto;
+.product {
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  height: 500px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  margin: 40px auto;
 }
 
-.image{
+.image {
+  width: 50%;
+  height: auto;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.info {
+  margin-left: 40px;
+}
+
+.info-h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+}
+
+.info-h1 {
+  width: 204px;
+  height: 116px;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: hsl(212, 21%, 14%);
+}
+
+.info-para {
+  width: 277px;
+  height: 80px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  color: hsl(228, 12%, 48%);
+}
+
+.cost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cost-h2 {
+  width: 142px;
+  height: 20px;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 20px;
+  color: hsl(158, 36%, 37%);
+}
+
+.cost-h4 {
+  width: 71px;
+  height: 30px;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: hsl(228, 12%, 48%);
+}
+
+.info-btn {
+  width: 276.9px;
+  height: 62.67px;
+  background: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  padding-left: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: none;
+}
+
+.btn-img {
+  padding-right: 20px;
+}
+
+.foot {
+  text-align: center;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: hsl(212, 21%, 14%);
+}
+
+.foot a {
+  text-decoration: none;
+  color: hsl(158, 36%, 37%);
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    flex-direction: column;
+    height: fit-content;
+    width: 90%;
+    padding-bottom: 50px;
+    margin: 28px auto;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .pic {
+    content: url(./images/image-product-mobile.jpg);
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .info-h1,
+  .info-para {
     width: 50%;
     height: auto;
+  }
+
+  .info-btn {
+    width: 90%;
+  }
 }
 
-.pic{
-    width:100%;
-    height:100%;
-    border-radius: 15px 0px 0px 15px;
-}
+@media screen and (max-width: 300px) {
+  .info {
+    margin-left: 10px;
+  }
 
-.info{
-    margin-left: 40px;
-}
-
-.info-h5{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-letter-spacing: 0.5em;
-text-transform: uppercase;
-color: hsl(228, 12%, 48%);;
-}
-
-.info-h1{
-    width: 204px;
-    height: 116px;
-    font-family: 'Fraunces';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 32px;
-    color: hsl(212, 21%, 14%);;
-}
-
-.info-para{
-    width: 277px;
-    height: 80px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 20px;
-    color: hsl(228, 12%, 48%);;
-}
-
-.cost{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.cost-h2{
-    width: 142px;
-    height: 20px;
-    font-family: 'Fraunces';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 20px;
-    color: hsl(158, 36%, 37%);;
-}
-
-.cost-h4{
-    width: 71px;
-    height: 30px;
-    font-family: 'Fraunces';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 30px;
-    color: hsl(228, 12%, 48%);
-}
-
-.info-btn{
-width: 276.9px;
-height: 62.67px;
-background: hsl(158, 36%, 37%);
-border-radius: 10px;
-color: hsl(0, 0%, 100%);
-padding-left: 20px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 800;
-font-size: 20px;
-line-height: 20px;
-text-align: center;
-border: none;
-}
-
-
-.btn-img{
-    padding-right: 20px;
-}
-
-.foot{
-    justify-content: center;
+  .cost {
+    flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: 'Fraunces';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 32px;
-    color: hsl(212, 21%, 14%);;
-}
+  }
 
-.foot a{
-    text-decoration: none;
-    color: hsl(158, 36%, 37%);
-}
+  .cost-h2,
+  .cost-h4 {
+    height: auto;
+  }
 
-
-
-@media screen and (max-width:768px) {
-
-    .product{
-        flex-direction: column;
-        height: fit-content;
-        width: 90%;
-        padding-bottom: 50px;
-        margin: 28px auto;
-    }
-
-    .image{
-        width: 100%;
-    }
-
-    .pic{
-     content: url(./images/image-product-mobile.jpg);
-     border-radius: 15px 15px 0px 0px;
-    }
-
-    .info-h1, .info-para{
-        width: 50%;
-        height: auto;
-    }
-
-    .info-btn{
-        width: 90%;
-    }
-}
-
-@media screen and (max-width:300px) {
-    .info {
-        margin-left: 10px;
-    }
-
-    .cost{
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .cost-h2, .cost-h4{
-        height: auto;
-    }
-
-    .cost-h4{
-        margin-top: -10px;
-    }
+  .cost-h4 {
+    margin-top: -10px;
+  }
 }
